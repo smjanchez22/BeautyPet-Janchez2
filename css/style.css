@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+
+* {
+    margin-top: 6;
+    padding: 0;
+}
+#main {
+    width: 100%;
+    height: 600px;
+}
+.btn-primary{
+    background-color: #B57EDC;
+    border-color: #B57EDC ;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-primary:hover{
+    background-color: #775391;
+    border-color: #775391 ;
+    transform: scale(0.9);
+  }
+header,
+footer,
+aside,
+section,
+nav {
+    border-radius: 15px;
+}
+
+section,
+aside {
+    background-color: #E0F7FA;
+}
+
+header,
+footer,
+nav {
+    background-color: #80DEEA;
+}
+
+h1 {
+    display: inline;
+}
+
+nav ul li {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    }
+    .padre-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items:stretch;
+
+    }
+
+    h1{
+    color: rgb(240, 186, 240);
+    }
+    h2{
+    color: rgb(231, 143, 231);
+    }
+    
+    p{
+    color: azure;
+    line-height: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+    body{
+        display: flex;
+        flex-direction:column;
+    background-image: url('../media/wallhaven-zm38kj.jpg');
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    .noticia__titulo{
+    color:azure;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    ul {
+    list-style: none;
+    font-size: 0;
+    }
+    
+    li {
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    font-size: 20px
+    }
+    
+    ul ul {
+    position: absolute;
+    display: none;
+    }
+    
+    ul ul li {
+    display: block;
+    }
+    
+    ul li:hover ul {
+    display: block;
+    }
+    
+    /* Grids */
+    .padre{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 1fr);
+    }
+    
+    header {
+    grid-area: header;
+    }
+    
+    footer {
+    grid-area: footer;
+    }
+    
+    section #productos {
+    grid-area: productos;
+    }
+    
+    section #servicios {
+    grid-area: servicios;
+    }
+    
+    #panel {
+    grid-area: panel;
+    }
+    
+    aside {
+    grid-area: publicidad;
+    }
+    
+    #grilla {
+    display: grid;
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 1fr 1fr 75px;
+    column-gap: 15px;
+    row-gap: 20px;
+    grid-template-areas: "nav header header" "nav productos publicidad" "nav servicios publicidad" "nav footer footer";
+    }
+    
+    #productos,
+    /*#servicios {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: stretch;
+    }
+    
+    
+    #servicios {
+    height: 250px;
+    justify-items: stretch;
+    align-items: stretch;
+    } */
+    
+    .item {
+    background-color: rgb(109, 217, 211) !important;
+    /* Valores: start, end, center, stretch (por defecto) */
+    justify-self: center;
+    align-self: stretch;
+    } 
+    
+    header div {
+    background-color: rgb(109, 217, 211);
+    border: 1px solid black;
+    } */
+    
+    header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px
+    }
+    
+   /* ul li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    } */
+    section {
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+    }
+    
+    header {
+        display: flex;
+        height: 150px;
+        padding: 30px;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    footer {
+        height: 50px;
+        flex-direction: row;
+    }
+
+    header {
+        grid-area: header;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    
+    section {
+        grid-area: section;
+    }
+    
+    nav {
+        grid-area: nav;
+    }
+    
+    aside {
+        grid-area: aside;
+    }
+    
+    .redes {
+        text-decoration: none;
+        color: white;
+        height: 70px;
+        width: 70px;
+        font-size: 2rem;
+        overflow: hidden;
+        background-color: black;
+        border-radius: 50%;
+        display: none;
+    }
+    
+    #logo,
+    #burger {
+        display: block;
+    }
+    
+    .redes ion-icon {
+        font-size: 40px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    
+    .redes:hover {
+        color: white;
+    }
+    
+    #brand {
+        height: 60px;
+        width: 60px;
+        margin-left: 4px;
+    }
+    
+    
+ 
+    /* Media Queries Bootstrap */  
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    #burger {
+        display: none;
+    }
+    .redes {
+        display: block;
+    }
+}
+
+@media (min-width: 1400px) {}
